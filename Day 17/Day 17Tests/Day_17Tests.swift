@@ -1,14 +1,14 @@
 //
-//  Day_16Tests.swift
-//  Day 16Tests
+//  Day_17Tests.swift
+//  Day 17Tests
 //
 //  Created by Brianna Babcock on 9/23/20.
 //
 
 import XCTest
-@testable import Day_16
+@testable import Day_17
 
-class Day_16Tests: XCTestCase {
+class Day_17Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
