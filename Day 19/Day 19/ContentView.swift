@@ -50,6 +50,8 @@ struct ContentView: View {
     
     var body: some View {
         
+        NavigationView {
+        
             Form {
                 Section(header: Text("What Unit Are You Starting With")) {
                     TextField("Enter Degree", text: $inputNumber)
@@ -76,8 +78,9 @@ struct ContentView: View {
                     Text("\(tempToTemp, specifier: "%.2f")°")
                 }
                
-                
+                .navigationBarTitle("TempConverter")
             }
+        }
         }
 }
 
