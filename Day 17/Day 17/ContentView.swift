@@ -45,6 +45,7 @@ struct ContentView: View {
                         ForEach(0 ..< tipPercentages.count) {
                             Text("\(self.tipPercentages[$0])%")
                         }
+                        
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
@@ -52,6 +53,7 @@ struct ContentView: View {
                 Section(header: Text("Amount Per Person?")) {
                     Text("$\(totalPerPerson, specifier: "%.2f")")
                 }
+                .foregroundColor((tipPercentages[tipPercentage] != 0) ? .black : .red)
             }
             .navigationBarTitle("WeSplit")
         }
